@@ -80,7 +80,7 @@ function Services() {
                 <TouchableOpacity style={styles.button}
                   onPress={() => ServiceHandler(service.name)}
                 >
-                  <Icons name={service.icon_name} color={'#1000C7'}/>
+                  <Icons name={service.icon_name} color={'#1000C7'} size={30} />
                   <Text style={styles.icon_name}>{service.name}</Text>
                 </TouchableOpacity> 
               </View>

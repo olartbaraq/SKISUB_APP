@@ -15,6 +15,11 @@ const [ account_number, setAccountNumber ] = useState('');
 const [ NetworkProvider, setNetworkProvider ] = useState('');
 const [ Amount, setAmount ] = useState('');
 const [ DataPlan, setDataPlan ] = useState('');
+const [ From, setFrom ] = useState('');
+const [ To, setTo ] = useState('');
+const [ date, setDate ] = useState(new Date());
+const [ Class, setClass ] = useState('');
+const [ Passengers, setPassengers ] = useState('');
 
   return { 
     Password,
@@ -44,6 +49,16 @@ const [ DataPlan, setDataPlan ] = useState('');
     Amount, 
     setAmount,
     DataPlan, 
-    setDataPlan
+    setDataPlan,
+    From,
+    setFrom,
+    To,
+    setTo,
+    date,
+    setDate,
+    Class,
+    setClass,
+    Passengers,
+    setPassengers
   };
 };

@@ -6,7 +6,7 @@ import BackgroundColor from 'react-native-background-color';
 import { Login, Register, ForgotPassword, ChangePassword, BottomTab, Notification,
    EditProfile, Settings, ResetPassword, Notifications, DeleteAccount, 
    Referral, HelpandSupport, Legal, FundWallet, Airtime, CarBook,
-   DataPurchase, CarRental, CableTV, Electricity, Flight, Hotel
+   DataPurchase, CarRental, CableTV, Electricity, Flight, Hotel, HotelBook
 } from '../utils/ScreenExport';
 
 const Stack = createStackNavigator();
@@ -81,6 +81,8 @@ function RootStack() {
                 <Stack.Screen name="Hotel" component={Hotel} />
 
                 <Stack.Screen name="Car Book" component={CarBook} />
+
+                <Stack.Screen name="Hotel Book" component={HotelBook} />
 
             </Stack.Navigator>
         </NavigationContainer>

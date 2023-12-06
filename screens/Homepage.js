@@ -41,11 +41,23 @@ const Homepage = () => {
     navigation.navigate('Services')
   };
 
+  const AirtimeHandler = () => {
+    navigation.navigate('Airtime')
+  };
+
+  const DataHandler = () => {
+    navigation.navigate('Data Purchase')
+  };
+
+  const CableHandler = () => {
+    navigation.navigate('Cable TV')
+  };
+
 
   const iconData = [
-    {id:1, name:'Airtime', icon_name:'call-outline'},
-    {id:2, name:'Data', icon_name:'filter'},
-    {id:3, name:'Cable TV', icon_name:'television'},
+    {id:1, name:'Airtime', icon_name:'call-outline', onPress: AirtimeHandler},
+    {id:2, name:'Data', icon_name:'filter', onPress: DataHandler},
+    {id:3, name:'Cable TV', icon_name:'television', onPress: CableHandler},
     {id:4, name:'More', icon_name:'more-horizontal', onPress: MoreHandler}
   ]
 
@@ -117,8 +129,8 @@ const Homepage = () => {
                       <Pressable style={styles.button}
                       onPress={data.onPress}
                       >
-                          <Icons name={data.icon_name} color={'#1000C7'}/>
-                          <Text style={styles.icon_name}>{data.name}</Text>
+                        <Icons name={data.icon_name} color={'#1000C7'}/>
+                        <Text style={styles.icon_name}>{data.name}</Text>
                       </Pressable> 
                   </View>
                 ))}

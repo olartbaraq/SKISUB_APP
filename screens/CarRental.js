@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, TextInput, FlatList, Pressable, Image, TouchableOpacity, ScrollView, Modal } from 'react-native'
+import { StyleSheet, Text, View, TextInput, FlatList, Pressable, Image, TouchableOpacity, ActivityIndicator, Modal } from 'react-native'
 import React, {useEffect, useState} from 'react'
 import { Header } from '../components';
 import { useNavigation } from '@react-navigation/native';
@@ -81,7 +81,7 @@ const CarRental = () => {
 
       {/* <ScrollView> */}
         <View style={styles.carRentals_container}>
-          {loading ? (<Text>Loading ...</Text>) : (
+          {loading ? ( <ActivityIndicator style={{flex: 1, justifyContent: 'center'}} size="large" color="#1000C7" /> ) : (
             (CarImages.map((car) => (
               <View
                 key={car.id}

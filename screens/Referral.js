@@ -31,7 +31,7 @@ function Referral() {
             initialRouteName="Referral"
             screenOptions={{
               tabBarGap: 10,
-              tabBarLabelStyle: { fontSize: 13, fontFamily: 'Roboto', fontWeight: 'bold', color: '#000', textTransform: 'capitalize'},
+              tabBarLabelStyle: { fontSize: 17, fontFamily: 'Roboto', fontWeight: 'bold', color: '#000', textTransform: 'capitalize'},
               tabBarItemStyle: { width: windowWidth * 0.5, height: 40 },
               tabBarStyle: { backgroundColor: 'transparent',
                               borderTopWidth: 0,

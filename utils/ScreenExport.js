@@ -21,9 +21,10 @@ import Electricity from '../screens/Electricity';
 import Flight from '../screens/Flight';
 import Hotel from '../screens/Hotel';
 import CarBook from '../screens/CarBook';
+import HotelBook from '../screens/HotelBook';
 
 export {
    Login, Register, ForgotPassword, ChangePassword, BottomTab, Notification, EditProfile, Settings,
    ResetPassword, Notifications, DeleteAccount, Referral, HelpandSupport, Legal, FundWallet, Airtime,
-   DataPurchase, CarRental, CableTV, Electricity, Flight, Hotel, CarBook
+   DataPurchase, CarRental, CableTV, Electricity, Flight, Hotel, CarBook, HotelBook
 }

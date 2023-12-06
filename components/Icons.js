@@ -7,7 +7,7 @@ import {
     FileIcon, EyeIcon, DownloadIcon, UploadIcon, MoreIcon, UserIcon, UsersIcon, QuestionIcon,
     SettingsIcon, BookIcon, SignOutIcon, ToggleOffIcon, ToggleOnIcon, BookMarkIcon, AirplaneIcon,
     HotelIcon, CarRentalIcon, CloseIcon, PassengerIcon, CarDoorIcon, AirConIcon, PetrolIcon,
-    GearIcon
+    GearIcon, WaterIcon, GrassIcon, OutdoorIcon, DownArrowIcon
 } from '../utils/Iconexports';
 
 
@@ -18,6 +18,9 @@ const Icons = ({name, size, color, style}) => {
             break;
         case 'chevron-small-right':
             return <RightArrowIcon name="chevron-small-right" size={30} color="#000" />
+        break;
+        case 'chevron-small-down':
+            return <DownArrowIcon name="chevron-small-down" size={30} color="#000" />
         break;
         case 'call-outline':
             return <CallIcon name="call" size={35} color={color} style={style}/>
@@ -80,7 +83,7 @@ const Icons = ({name, size, color, style}) => {
             return <GlobeIcon name="globe-africa" size={35} color="#1000C7" />
             break;
         case 'lightbulb-variant':
-            return <BulbIcon name="lightbulb-variant" size={35} color="#1000C7" />
+            return <BulbIcon name="lightbulb-variant" size={size} color={color} />
             break;
         case 'wallet-outline':
             return <WalletOutlineIcon name="wallet-outline" size={35} color="#000" />
@@ -147,6 +150,18 @@ const Icons = ({name, size, color, style}) => {
         break;
         case 'car-shift-pattern':
             return <GearIcon name="car-shift-pattern" size={30} color="#000" />
+        break;
+        case 'car-shift-pattern':
+            return <GearIcon name="car-shift-pattern" size={30} color="#000" />
+        break;
+        case 'water':
+            return <WaterIcon name="cup-water" size={size} color={color} />
+        break;
+        case 'grass':
+            return <GrassIcon name="grass" size={size} color={color} />
+        break;
+        case 'outdoor':
+            return <OutdoorIcon name="outdoor-grill" size={size} color={color} />
         break;
 
         default:
