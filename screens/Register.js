@@ -154,26 +154,17 @@ function Register() {
           },
         });
        
+      } else {
+        console.log(loginResponse.data );
+      //   Toast.show({
+      //     type: ALERT_TYPE.WARNING,
+      //     title: 'Warning',
+      //     textBody: `${error.message}`,
+      //   });
+      //     setSignupText('Sign Up');
+      //     setIsSigningIn(false);
       }
     } catch (error) {
-      setTimeout(() => {
-        console.log(error)
-        switch (error.message) {
-            case `Request failed with status code 400`:
-              Toast.show({
-                type: ALERT_TYPE.WARNING,
-                title: 'Warning',
-                textBody: `${error.message}`,
-              });
-                setSignupText('Sign Up');
-                setIsSigningIn(false);
-                break;
-              
-                // Add more cases as needed for other error values
-            default:
-                break;
-        }
-      }, 2000);
     }
   }
 
